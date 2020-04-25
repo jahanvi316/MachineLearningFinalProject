@@ -5,4 +5,6 @@
 2. Open Command Prompt
 3. Navigate to location of Project folder
 4. Run File in command prompt.
-    * Use the following command: "Python questionOne.py"
+    * Use the following command: `Python questionOne.py`
+
+*File currently estimates the missing values. The return should be a completed data set.* 
