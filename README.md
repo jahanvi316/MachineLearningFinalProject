@@ -36,19 +36,25 @@ TrainData 5 contains 11 features with 1119 samples. Testdata5 contains 11 featur
 TrainData 6 contains 142 features with 612 samples. Testdata5 contains 142 features with 262 samples. This is not a classification problem. You are asked to predict the real value. (Graduate Students Only)
 
 **Sample Data:**
+
 Training data: 
 
 1.1 2.1 2.1 5.2 
+
 2.1 2.4 2.4 2.1 
+
 3.1 1.5 2.6 1.5 
 
 Training label 
 
 1 
-1 
+
+1
+
 2 
 
 Test data 
 
 3.1 2.2 1.5 2.5 
+
 2.1 2.1 2.1 2.6 
