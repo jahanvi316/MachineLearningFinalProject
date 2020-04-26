@@ -44,23 +44,25 @@ with open("TestData6.txt") as TestData6:
  
 with open("testing.txt") as testing:
         testing = [line.split() for line in testing]
+
         
 #find missing values (1.00000000000000e+99) and replacing it
 def missingValues(array): 
     #print("missingValues called")
     for r in range(len(array)): #loop through array - row
         for c in range(len(array[r])): #loop through array -column
-            print("for loop: ")
-            print(r, c)
-            if array[r][c] == ("1.00000000000000e+99"):  #find 1.00000000000000e+99 (missing entry)
-               # print("if statement in missingValues successful")
+            #print("for loop: ")
+            #print(r, c)
+            floatVal = (float)(array[r][c])
+            if floatVal==1.00000000000000e+99:  #find 1.00000000000000e+99 (missing entry)
+                #print("if statement in missingValues successful")
                 findSimilarRow(array, r) 
     #print("missingValues end")
     return array;
     
 #find patterns for the row of missing value    
 def findSimilarRow(array, currentRow):
-    #print("findSimilarRow called")
+   # print("findSimilarRow called")
     for r in range(len(array)):
         if r != currentRow:
             #print("if statement in findSimilarRow successful")
@@ -78,34 +80,61 @@ def isRowTheSame(missingValRow, comparedRow):
     for i in range(len(comparedRow)):
         #print("for loop in isRowTheSame called for ")
         #print(i)
-        if missingValRow[i] != 1.00000000000000e+99: #if number is not 1.00000000000000e+99
-            print("missingValRow isn't number")
+        floatVal = (float)(missingValRow[i])
+        if floatVal != 1.00000000000000e99: #if number is not 1.00000000000000e+99
+            #print("missingValRow isn't number")
             if missingValRow[i] != comparedRow[i]: #if the rows are not the same
-                print("missingValRow isn't same as comparedRow")
+                #print("missingValRow isn't same as comparedRow")
                 return [] #return empty array if not the same
-            else:
-                print("missingValRow same as comparedRow")
+            #else:
+                #print("missingValRow same as comparedRow")
         else:
-            print("missingValRow is number")
+            #print("missingValRow is number")
             colToFillArray.append(i) #if it is the missing value (1.00000000000000e+99), add index to array colToFill
-    print("isRowTheSame Ended")
-    print("colToFillArray :")
-    print(colToFillArray)
+    #print("isRowTheSame Ended")
+   # print("colToFillArray :")
+   # print(colToFillArray)
     return colToFillArray
     
 
 #method to fill in the missing columns found by isRowTheSame
 def fillMissingColumns(array, currentRow, row, colToFill):
-    for i in len(colToFill):
+    for i in range(len(colToFill)):
         currentCol = colToFill[i]
         array[currentRow][currentCol] = array[row][currentCol]
+    return array;
+    
+#method to convert all numbers to floats
+def convertToFloat(array):
+    for r in range(len(array)): #loop through array - row
+        for c in range(len(array[r])): #loop through array -column
+            floatVal = (float)(array[r][c])
+            array[r][c] = floatVal
+    return array;
+    
+#method to convert all numbers to int
+def convertToInt(array):
+    for r in range(len(array)): #loop through array - row
+        for c in range(len(array[r])): #loop through array -column
+            intVal = (int)(array[r][c])
+            array[r][c] = intVal
     return array;
   
 #method to classify
 def classify():
     #insert method here
     return;
-    
 
-missingValues(testing)
-print(testing)
+def run(file):    
+    convertToFloat(file)
+    missingValues(file)
+    convertToInt(file)
+    print(file)
+    
+#run(testing) #uncomment line to run on test file
+#run(TrainData1Array)   #uncomment lin6e to run on TrainData1 file
+#run(TrainData2Array)   #uncomment line to run on TrainData2 file
+#run(TrainData3Array)   #uncomment line to run on TrainData3 file
+#run(TrainData4Array)   #uncomment line to run on TrainData4 file
+#run(TrainData5Array)   #uncomment line to run on TrainData5 file
+#run(TrainData6Array)   #uncomment line to run on TrainData6 file
