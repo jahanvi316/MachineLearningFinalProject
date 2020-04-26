@@ -47,31 +47,31 @@ TrainData 6 contains 142 features with 612 samples. Testdata5 contains 142 featu
 
 Training data: 
 
-    1.1 2.1 2.1 5.2 
+        1.1 2.1 2.1 5.2 
 
-    2.1 2.4 2.4 2.1 
+        2.1 2.4 2.4 2.1 
 
-    3.1 1.5 2.6 1.5 
+        3.1 1.5 2.6 1.5 
 
 Training label 
 
-    1 
+        1 
 
-    1
+        1
 
-    2 
+        2 
 
 Test data 
 
-    3.1 2.2 1.5 2.5 
+        3.1 2.2 1.5 2.5 
 
-    2.1 2.1 2.1 2.6 
+        2.1 2.1 2.1 2.6 
 
 Please use the training data and training label to predict the test label. For example, if your prediction for the test sample is 1, 2. That is, the first sample in the test dataset (first row) is predicted as 1 and second as 2. Then please return me the test result of each dataset as an individual files. 
 
-    1
+        1
 
-    2
+        2
     
 2. Missing Value Estimation
 
@@ -81,9 +81,9 @@ Dataset 1 contains 242 genes with 14 samples.
 Dataset 2 contains 758 genes with 50 samples. 
 Dataset 3 contains 273 viruses with 79 samples. There are only 3815 observed values. (Bonus Questions for Undergraduate)
 
-    1   1.00000000000000e+99    1.00000000000000e+99 
-    1   1                       1 
-    2   2                       2
+        1   1.00000000000000e+99    1.00000000000000e+99 
+        1   1                       1 
+        2   2                       2
                                                   Table 1
                                                   
 Note that the missing entry is filled by 1.00000000000000e+99.  For example, in the Table 1, the second and third entries in the first row are missing values. There are 4% missing values in the Dataset 1 and 10% missing values in the Dataset 2.  Please fill those missing entries with estimated values and return the complete dataset to me.
@@ -98,7 +98,7 @@ In the following dataset, there are totally 14 target labels. The samples in the
         
  Please predict the labels for the test samples. The output file format of Testing Label should be consistent with MultLabelTrainLabel. For example, if there are 3 test samples where the predicting labels for the first sample is that it has label of 2, 3, the predicting label for the second sample is 12, 14, and the predicting labels for the third one is 2, 5. The output is as follows:
  
-    0 1 1 0 0 0 0 0 0 0 0 0 0 0 
-    0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-    0 1 0 0 1 0 0 0 0 0 0 0 0 0
- 
+        0 1 1 0 0 0 0 0 0 0 0 0 0 0 
+        0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+        0 1 0 0 1 0 0 0 0 0 0 0 0 0
+
