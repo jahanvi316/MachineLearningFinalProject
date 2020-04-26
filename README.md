@@ -39,22 +39,28 @@ TrainData 6 contains 142 features with 612 samples. Testdata5 contains 142 featu
 
 Training data: 
 
-1.1 2.1 2.1 5.2 
+    1.1 2.1 2.1 5.2 
 
-2.1 2.4 2.4 2.1 
+    2.1 2.4 2.4 2.1 
 
-3.1 1.5 2.6 1.5 
+    3.1 1.5 2.6 1.5 
 
 Training label 
 
-1 
+    1 
 
-1
+    1
 
-2 
+    2 
 
 Test data 
 
-3.1 2.2 1.5 2.5 
+    3.1 2.2 1.5 2.5 
 
-2.1 2.1 2.1 2.6 
+    2.1 2.1 2.1 2.6 
+
+Please use the training data and training label to predict the test label. For example, if your prediction for the test sample is 1, 2. That is, the first sample in the test dataset (first row) is predicted as 1 and second as 2. Then please return me the test result of each dataset as an individual files. 
+
+    1
+
+    2
