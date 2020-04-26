@@ -7,6 +7,7 @@
 1. Navigate to location of Project folder
 1. Run File in command prompt.
     * Use the following command: `Python questionOne.py`
+1. See Result Files saved in Folder
 
 ### Question 2
 1. Download project .zip file and extract project 
@@ -14,6 +15,7 @@
 1. Navigate to location of Project folder
 1. Run File in command prompt.
     * Use the following command: `Python questionTwo.py`
+1. See Result Files saved in Folder
 
 ## Project Description
 1. Classification 
