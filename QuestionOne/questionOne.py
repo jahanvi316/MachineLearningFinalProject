@@ -148,9 +148,9 @@ def arrayToFile(fileIn, fileNum):
     return f
     
 #run(testing, 0) #uncomment line to run on test file
-run(TrainData1Array, 1)   #uncomment lin6e to run on TrainData1 file
-run(TrainData2Array, 2)   #uncomment line to run on TrainData2 file
-run(TrainData3Array, 3)   #uncomment line to run on TrainData3 file
-run(TrainData4Array, 4)   #uncomment line to run on TrainData4 file
-run(TrainData5Array, 5)   #uncomment line to run on TrainData5 file
-run(TrainData6Array, 6)   #uncomment line to run on TrainData6 file
+run(TrainData1Array, 1)   
+run(TrainData2Array, 2)   
+run(TrainData3Array, 3)   
+run(TrainData4Array, 4)   
+run(TrainData5Array, 5)   
+run(TrainData6Array, 6)   
