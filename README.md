@@ -1,6 +1,7 @@
 # Machine Learning Final Project
 
-## Instructions To Run Code
+## Instructions To Run Code 
+# Question 1
 1. Download project .zip file and extract project 
 1. Open Command Prompt
 1. Navigate to location of Project folder
@@ -13,8 +14,6 @@
      * Line 156 is TrainData6
 1. Run File in command prompt.
     * Use the following command: `Python questionOne.py`
-
-*File currently estimates the missing values. The return should be a completed data set.* 
 
 
 
