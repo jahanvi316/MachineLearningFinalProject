@@ -110,6 +110,6 @@ def arrayToFile(fileIn, fileNum):
         f.write("\n")
     return f
     
-#run(MissingData1Array, 1)   #uncomment lin6e to run on MissingData1 file
-#run(MissingData2Array, 2)   #uncomment line to run on MissingData2 file
-#run(MissingData3Array, 3)   #uncomment line to run on MissingData3 file
+run(MissingData1Array, 1)   
+run(MissingData2Array, 2)  
+run(MissingData3Array, 3)  
