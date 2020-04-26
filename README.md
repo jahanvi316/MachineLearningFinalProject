@@ -72,3 +72,33 @@ Please use the training data and training label to predict the test label. For e
     1
 
     2
+    
+2. Missing Value Estimation
+
+Gene expression data often contain missing expression values and it is very important to estimate those missing value as accurate as possible. The first task of the course project is to estimate missing value in the Microarray Data. 
+
+Dataset 1 contains 242 genes with 14 samples.
+Dataset 2 contains 758 genes with 50 samples. 
+Dataset 3 contains 273 viruses with 79 samples. There are only 3815 observed values. (Bonus Questions for Undergraduate)
+
+    1   1.00000000000000e+99    1.00000000000000e+99 
+    1   1                       1 
+    2   2                       2
+                                                  Table 1
+                                                  
+Note that the missing entry is filled by 1.00000000000000e+99.  For example, in the Table 1, the second and third entries in the first row are missing values. There are 4% missing values in the Dataset 1 and 10% missing values in the Dataset 2.  Please fill those missing entries with estimated values and return the complete dataset to me.
+
+3. **Multi-label Classification** : Multi-label classification is a variant of the classification problem where multiple target labels must be assigned to each sample (Graduate Students Only)
+
+MultLabelTrainData contains 103 features with 500 samples. MultLabelTestData contains 103 features with 100 samples. The label file for the train data can be download at MultLabelTrainLabel 
+
+In the following dataset, there are totally 14 target labels. The samples in the training dataset are assigned with more than one target label. For example, in the first sample MultLabelTrainLabel, the label assignment for the first sample is 7, 8, 12 and 13. Those positions are marked with 1. 
+    
+        0 0 0 0 0 0 1 1 0 0 0 1 1 0
+        
+ Please predict the labels for the test samples. The output file format of Testing Label should be consistent with MultLabelTrainLabel. For example, if there are 3 test samples where the predicting labels for the first sample is that it has label of 2, 3, the predicting label for the second sample is 12, 14, and the predicting labels for the third one is 2, 5. The output is as follows:
+ 
+    0 1 1 0 0 0 0 0 0 0 0 0 0 0 
+    0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+    0 1 0 0 1 0 0 0 0 0 0 0 0 0
+ 
