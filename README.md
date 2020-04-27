@@ -9,7 +9,7 @@
     * Use the following command: `Python questionOne.py`
 1. See Result Files saved in Folder
 
-*__Note:__ A test file was created called testing.txt that saves the results as PatelClassfication0.txt
+*__Note:__ A test file was created called testing.txt that saves the results as PatelClassfication0.txt*
 
 ### Question 2
 1. Download project .zip file and extract project 
