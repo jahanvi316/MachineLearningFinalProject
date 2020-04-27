@@ -113,12 +113,13 @@ def convertToFloat(array):
     return array;
     
 #method to convert all numbers to int
-def convertToInt(array):
-    for r in range(len(array)): #loop through array - row
-        for c in range(len(array[r])): #loop through array -column
-            intVal = (int)(array[r][c])
-            array[r][c] = intVal
-    return array;
+def convertToInt(array, FileNum):
+    if FileNum == 3:
+        for r in range(len(array)): #loop through array - row
+            for c in range(len(array[r])): #loop through array -column
+                intVal = (int)(array[r][c])
+                array[r][c] = intVal
+        return array;
   
 #method to classify
 def classify():
@@ -129,7 +130,7 @@ def classify():
 def run(file, num):    
     convertToFloat(file)
     missingValues(file)
-    convertToInt(file)
+    convertToInt(file, num)
     #print(file)
     arrayToFile(file, num)
 
@@ -146,6 +147,9 @@ def arrayToFile(fileIn, fileNum):
         f.write(line)
         f.write("\n")
     return f
+    
+
+    
     
 #run(testing, 0) #uncomment line to run on test file
 run(TrainData1Array, 1)   
